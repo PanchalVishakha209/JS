@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+     <!-- 
+        
+    Variable/Identifier : to store values
+
+    3 ways to declare a valriable:
+
+    1. var (default / Global)
+    2. let (Scope related)
+    3. const 
+
+    Keywords = Reservered Words which have special meaning
+
+    Syntax:
+
+    var/let/const varname = value;
+
+    Ex:
+
+    var test = 12;
+    let test= 12;
+    const test = 12;
+
+    Rules:
+
+    1. var name cant start with a number.
+    2. it cant be the keywords
+
+    ex.
+
+    var/let/const t1 =23; (Right)
+    var switch1 = 45; (right)
+
+
+    var/let/const 1t =23;  (Wrong)
+    var switch = 45; (Wrong as switch is a keyword)
+
+
+-->
+
+
+<body>
+
+    <script>
+
+
+        var x=12; //declaration Allowed
+        var x=52; //Re-declaration Allowed
+        x=45 //Re-assignment Allowed
+
+        document.write(x)
+        document.write("<br>");
+
+        
+        let y=10; //declaration Allowed
+        // let y=20; //Re-declaration are not Allowed
+        y=50 //Re-assignment Allowed
+
+        document.write(y)
+        document.write("<br>");
+
+        const z=35; //declaration Allowed
+        // const z=66; //Re-declaration Allowed
+        // z=98 //Re-assignment Allowed
+
+        document.write(z)
+
+
+        
+
+        
+
+    </script>
+    
+</body>
+</html>
