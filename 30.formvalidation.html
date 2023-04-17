@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name:<input type="text" id="nm"><br><br>
+    E-mail:<input type="email" id="em"><br><br>
+    Password:<input type="password" id="pw"><br><br>
+    Confirm Password:<input type="password" id="cpw"><br><br>
+    Mobile:<input type="text" id="mb"><br><br>
+    <input type="submit" id="sb" onclick="formvalidation()">
+
+    <script>
+        n=document.getElementById('nm');
+        e=document.getElementById('em');
+        p=document.getElementById('pw');
+        cp=document.getElementById('cpw');
+        m=document.getElementById('mb');
+        s=document.getElementById('sb');
+
+        function formvalidation(){
+            if(n.value ==""){
+                alert("name is required....!");
+                return false;
+            }
+
+            if(p.value ==""){
+                alert("password is required....!");
+                return false;
+            }
+
+            if(p.value !=cp.value){
+                alert("password do not match....!");
+                return false;
+            }
+
+            if(m.value ==""){
+                alert("mobile number is required....!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

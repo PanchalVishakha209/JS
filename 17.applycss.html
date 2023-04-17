@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .xyz{
+            background: linear-gradient(plum,lightpink);
+            color:lightseagreen;
+            height: 100px;
+            width: 100px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="t">heading1</h1>
+    <h2 id="t1">heading2</h2>
+</body>
+
+    <script>
+
+        h1=document.getElementById('t');
+        h2=document.getElementById('t1');
+
+        //    varname.style.property= "value";
+
+        h1.style.color="plum";
+        h1.style.background="lightpink";
+        h1.style.height="100px";
+        h1.style.width="100px";
+        h1.style.fontSize="20px";
+        console.log(h1);
+
+        h2.classList.add('xyz');
+        console.log(h2);
+        h2.classList.remove('xyz');
+        console.log(h2);
+        h2.classList.add('xyz');
+        
+    </script>
+</html>
