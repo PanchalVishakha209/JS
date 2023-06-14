@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+
+    Name: <input type="text" id="nm"> <br><br>
+    Password: <input type="text" id="pw"> <br><br>
+    Confirm password: <input type="text" id="cpw"> <br><br>
+    Mobile: <input type="text" id="mb"> <br><br>
+    
+    <button onclick="return xyz()">Submit</button>
+
+    </form>
+    <script>
+        
+        nam = document.getElementById('nm');
+        password = document.getElementById('pw');
+        cpassword = document.getElementById('cpw');
+        mobile = document.getElementById('mb');
+
+       nm_ex = /^[a-zA-z]+$/
+        mb_ex = /^[0-9]{10}$/
+
+        function xyz()
+        {
+            if(nam.value=="")
+        {
+            alert("name required...!");
+           return ;
+        }
+
+        if(password.value=="")
+        {
+            alert("password required...!");
+           return false;
+        }
+
+        if(cpassword.value!= password.value)
+        {
+            alert("confirm password  do not match...!");
+           return false;
+        }
+
+        if(mobile.value=="")
+        {
+            alert("name required...!");
+            return false;
+        }
+        }
+
+        
+    </script>
+
+
+    
+</body>
+</html>
